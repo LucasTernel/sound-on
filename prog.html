@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../img/icon.png" />
+    <title>Toute la programmation</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <header class="top-bar">
+        <div class="top-bar">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../img/sound-on-logo.png" alt="SoundOn Logo" id="logo" data-height-percentage="88" />
+                </a>
+            </div>
+            <div class="site-name">
+                <h1>Sound On</h1>
+            </div>
+        </div>
+        <div class="navbar">
+            <span class="menu-icon" onclick="toggleNav()">Menu</span>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">&times;</a>
+            <div class="category">
+                <a href="../index.html" class="category-link">Acceuil</a>
+            </div>
+            <div class="category">
+                <a href="../prog/prog.html" class="category-link">Programmation</a>
+                <span class="category-toggle" onclick="toggleSubmenu('submenu1')">▼</span>
+                <div id="submenu1" class="submenu">
+                    <a href="../prog/prog/cousin_machin.html">-> Cousin Machin</a>
+                    <a href="../prog/prog/indochine.html">-> Indochine</a>
+                </div>
+            </div>
+        
+            <!-- Catégorie 2 -->
+            <div class="category">
+                <a href="../salle/acceder_salle.html" class="category-link">Accéder à la salle</a>
+            </div>
+        
+            <!-- Catégorie 3 -->
+            <div class="category">
+                <a href="../acces/accessibilite-psh.html" class="category-link">Accessibilité</a>
+            </div>
+
+            <!-- Catégorie 4 -->
+            <div class="category">
+                <a href="../food/food.html" class="category-link">Food & Bar</a>
+            </div>
+
+            <!-- Catégorie 5 -->
+            <div class="category">
+                <a href="../pdf/reglement.pdf" target="_blank" class="category-link">Réglements</a>
+            </div>
+
+            <!-- Catégorie 6 -->
+            <div class="category">
+                <a href="../contact/contact.html" class="category-link">Contacts</a>
+            </div>
+        </div>      
+    </header>   
+    <main>
+
+        <!-- Section des événements à venir -->
+        <section class="upcoming-events">
+            <br><h2>Tous les Événements à venir</h2>
+            <div class="event">
+                <div class="event-image">
+                    <img src="../img/image3.jpeg" alt="Cousin Machin">
+                </div>
+                <div class="event-info">
+                    <h3>Cousin Machin</h3>
+                    <p>24 Décembre 2024</p>
+                    <p>Les billets sont en vente.</p>
+                    <p>Billets à partir de 45e</p>
+                    <a href="prog/cousin_machin.html" class="btn">Acheter des billets</a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="event-image">
+                    <img src="../img/image1.png" alt="Indochine">
+                </div>
+                <div class="event-info">
+                    <h3>Indochine</h3>
+                    <p>Le 3 Février 2025</p>
+                    <p>Les billets sont en vente.</p>
+                    <p>Billets à partir de 45e</p>
+                    <a href="prog/indochine.html" class="btn">Acheter des billets</a>
+                </div>
+            </div>
+            <div class="event annule">
+                <div class="event-image">
+                    <img src="../img/image0.png" alt="Dua Lipa">
+                </div>
+                <div class="event-info">
+                    <h3>Dua Lipa</h3>
+                    <p>Le 15 Février 2025</p>
+                    <p>Mise en vente des billets le 15 Novembre 2024.</p>
+                    <a href="" class="btn">CONCERT ANNULE</a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="event-image">
+                    <img src="../img/pg.png" alt="Pierre Garnier">
+                </div>
+                <div class="event-info">
+                    <h3>Pierre Garnier</h3>
+                    <p>Le 2 Juin 2025</p>
+                    <p>Mise en vente des billets le 10 Janvier 2025.</p>
+                    <a href="#" class="btn">Acheter des billets</a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="event-image">
+                    <img src="../img/1.PNG" alt="Imagine Dragons">
+                </div>
+                <div class="event-info">
+                    <h3>Imagine Dragons</h3>
+                    <p>Le 23 Juillet 2025</p>
+                    <p>Mise en vente des billets le 10 Janvier 2025.</p>
+                    <a href="#" class="btn">Acheter des billets</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- Pied de page -->
+    <footer>
+        <div class="footer-container">
+            <div class="social-media">
+                <h3>Suivez-nous</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.tik-tok.com" target="_blank">Tik Tok</a></li>
+                </ul>
+            </div>
+            
+            <div class="contact-info">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="mailto:contact@SoundOn.fr">contact@SoundON.fr</a></li>
+                    <li>Téléphone: 03 68 09 80 80</li>
+                    <li>Adresse: 16 Rue de l'Université, 62307 Lens</li>
+                </ul>
+            </div>
+            
+            <div class="rules">
+                <h3>Liens Utiles</h3>
+                <ul>
+                    <li><a href="../pdf/reglement.pdf" target="_blank">Reglement de la Salle</a></li>
+                    <li><a href="../contact/contact.html">Nous Contacter</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Mentions Légales</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Sound On. Tous droits réservés.</p>
+            <p>&copy; Lucas Ternel, Manon Drumez, Nathan Roelofs, Ethan Morel</p>
+        </div>
+    </footer>
+    <script src="../code.js"></script>
+</body>
+</html>

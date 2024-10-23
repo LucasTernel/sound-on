@@ -1,0 +1,425 @@
+/* Réinitialisation de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corps et HTML avec le défilement réactivé */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto; /* Permet le défilement vertical */
+}
+
+/* Barre en haut du site */
+.top-bar {
+    display: flex;
+    justify-content: center; /* Centre les éléments horizontalement */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #7a4d4dce;
+    color: #ffffff;
+    width: 100%;
+    top: 0; /* Toujours en haut */
+    z-index: 1000;
+    height: 80px;
+    position: sticky;
+}
+
+.top-bar:hover {
+    top: 0; /* La barre apparaît quand on la survole */
+}
+
+.logo {
+    position: absolute;
+    left: 20px; /* Fixe le logo à gauche */
+    margin-top: 15px;
+}
+
+.logo img {
+    height: 80px; /* Taille du logo */
+}
+
+/* Centrer Sound On avec Flexbox */
+.site-name {
+    text-align: center;
+}
+
+.site-name h1 {
+    font-size: 24px;
+    color: #f1c40f;
+    margin: 0;
+}
+
+/* Styles généraux */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    background-color: #0b0b0b;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    margin: 40px 0;
+    color: #f1c40f;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+a {
+    color: rgb(39, 155, 4);
+    text-decoration: none;
+}
+
+footer {
+    background-color: #1a1a1a77;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #0c9aa1;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-container div {
+    margin: 10px;
+}
+
+.footer-container h3 {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+}
+
+.footer-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-container li {
+    margin: 5px 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #f1c40f;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #ffffff;
+}
+
+
+/* Styles communs pour les sections */
+section {
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+section h2 {
+    color: #f1c40f;
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #bb051d;
+    padding-bottom: 10px;
+}
+
+/* Section de la carte Google */
+.map-container {
+    width: 100%;
+    height: 400px;
+    margin: 20px 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Section des bus */
+.bus-section {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.bus-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.bus-line-container {
+    background-color: #333;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    max-width: 200px;
+    flex: 1 1 45%; /* 2 par ligne sur les écrans plus grands */
+}
+
+.bus-line-image {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.bus-line-container p {
+    color: #fff;
+    font-size: 16px;
+}
+
+
+/* Section des parkings */
+.parking-section {
+    background-color: rgba(0, 0, 0, 0.6); /* Couleur de fond semi-transparente */
+    padding: 40px 20px; /* Ajoutez un peu de remplissage */
+    border-radius: 10px; /* Coins arrondis */
+    margin-bottom: 20px; /* Espace entre les sections */
+}
+
+.parking {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.parking-image {
+    width: 100%; /* Ajustez la largeur selon vos besoins */
+    max-width: 600px; /* Limite la taille maximale de l'image */
+    height: auto; /* Maintient le ratio d'aspect */
+    margin-bottom: 20px; /* Espace entre l'image et le texte */
+}
+
+.parking-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 20px; /* Espace entre la barre et le texte */
+}
+
+.public-parking,
+.staff-parking {
+    width: 48%; /* Chaque section prend presque la moitié de l'espace */
+    padding: 10px; /* Espacement à l'intérieur des sections */
+    background-color: #333;
+    border-radius: 8px; /* Coins arrondis */
+}
+
+.public-parking h3,
+.staff-parking h3 {
+    margin-bottom: 10px; /* Espacement sous les titres */
+    color: #f1c40f; /* Couleur des titres */
+}
+
+.public-parking p,
+.staff-parking p {
+    color: #ffffff; /* Couleur du texte */
+}
+
+/* Section des autres moyens de transport */
+.other-transport-section {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.other-transport-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.other-transport {
+    background-color: #333;
+    border-radius: 8px;
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+}
+
+.other-transport h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+/* Pour les écrans de tablettes */
+/* Responsive design pour les tablettes */
+/* Responsive design pour les tablettes */
+@media (max-width: 768px) {
+    /* Ajustement de la barre supérieure */
+    .top-bar {
+        height: 60px; /* Réduit la hauteur de la barre supérieure */
+    }
+
+    .logo img {
+        height: 60px; /* Réduit la taille du logo */
+    }
+
+    .site-name h1 {
+        font-size: 20px; /* Taille réduite du texte */
+    }
+}
+
+@media (max-width: 480px) {
+    .top-bar {
+        height: 50px; /* Réduit encore plus la hauteur */
+        padding: 5px 10px;
+    }
+    
+    .logo img {
+        height: 50px; /* Taille du logo pour mobile */
+    }
+
+    .site-name h1 {
+        font-size: 18px; /* Taille du texte plus petite */
+    }
+}
+
+.navbar {
+    overflow: hidden; /* Pour gérer le contenu débordant */
+    display: flex; /* Utiliser flexbox pour le centrage */
+    align-items: center; /* Aligner verticalement */
+    justify-content: flex-start; /* Aligner à gauche */
+}
+
+/* Styles pour l'icône du menu */
+.menu-icon {
+    color: rgb(0, 17, 255); /* Couleur du texte de l'icône */
+    font-size: 25px; /* Taille de la police */
+    cursor: pointer; /* Changer le curseur au survol */
+    margin-right: 10px; /* Espace à droite de l'icône */
+}
+
+/* Styles pour la barre latérale */
+.sidenav {
+    height: 100%; /* Hauteur complète */
+    width: 0; /* Commence masqué */
+    position: fixed; /* Reste en place quand on défile */
+    z-index: 1000; /* Au-dessus des autres éléments */
+    top: 80px;
+    right: 0;
+    background-color: #7a4d4dce;
+    overflow-x: hidden; /* Pas de défilement horizontal */
+    transition: 0.5s; /* Transition douce */
+    padding-top: 60px; /* Espacement en haut */
+    margin-right : 15px;
+}
+
+/* Styles pour les liens dans le menu */
+.sidenav a {
+    padding: 10px 16px; /* Espacement pour les liens */
+    text-decoration: none; /* Pas de soulignement */
+    font-size: 20px; /* Taille du texte */
+    color: rgb(54, 2, 70); /* Couleur du texte */
+    display: block; /* Les liens occupent toute la largeur */
+}
+
+/* Changer la couleur au survol */
+.sidenav a:hover {
+    color: #ff0000; /* Couleur au survol */
+}
+
+.category {
+    margin: 10px 0;
+    position: relative; /* Permet de positionner la flèche par rapport à la catégorie */
+}
+
+/* Catégorie lien */
+.category-link {
+    font-size: 18px;
+    color: rgb(11, 139, 161);
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    width: 85%; /* Réduit la largeur pour laisser de la place à la flèche */
+    box-sizing: border-box;
+}
+
+/* Sous-catégories cachées par défaut */
+.submenu {
+    display: none;
+    padding-left: 20px; /* Indentation pour montrer que ce sont des sous-catégories */
+}
+
+.submenu a {
+    padding: 5px 0;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.submenu a:hover {
+    color: #006da0; /* Couleur au survol */
+}
+
+/* Le bouton pour dérouler le menu */
+.category-toggle {
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    right: 10px; /* Place la flèche à droite du lien */
+    top: 10px; /* Aligne verticalement avec le texte de la catégorie */
+}
+
+/* Bouton de fermeture */
+.closebtn {
+    font-size: 60px; /* Augmente la taille de la croix */
+    color: white;
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+}
+
+/* Afficher le menu */
+.sidenav.open {
+    width: 250px; /* Largeur quand ouvert */
+}
+
+/* Styles pour l'icône du menu */
+.menu-icon {
+    color: white; /* Couleur du texte */
+    font-size: 20px; /* Taille de la police */
+    cursor: pointer; /* Changer le curseur au survol */
+    display: flex;
+    margin-right: 10px; /* Espace à droite de l'icône */
+    margin-left: 20px; /* Espace à droite de l'icône */
+}
+
+.bandeau-noir {
+    padding: 50px 0;
+    background-color: #000000ab; /* Fond noir pour le séparateur */
+    text-align: center;
+    color: #ffffff;
+}

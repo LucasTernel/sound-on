@@ -1,0 +1,632 @@
+/* Réinitialisation de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corps et HTML avec le défilement réactivé */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto; /* Permet le défilement vertical */
+}
+
+/* Barre en haut du site */
+.top-bar {
+    display: flex;
+    justify-content: center; /* Centre les éléments horizontalement */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #7a4d4dce;
+    color: #ffffff;
+    width: 100%;
+    top: 0; /* Toujours en haut */
+    z-index: 1000;
+    height: 80px;
+    position: sticky;
+}
+
+.top-bar:hover {
+    top: 0; /* La barre apparaît quand on la survole */
+}
+
+.logo {
+    position: absolute;
+    left: 20px; /* Fixe le logo à gauche */
+    margin-top: 15px;
+}
+
+.logo img {
+    height: 80px; /* Taille du logo */
+}
+
+/* Centrer Sound On avec Flexbox */
+.site-name {
+    text-align: center;
+}
+
+.site-name h1 {
+    font-size: 24px;
+    color: #f1c40f;
+    margin: 0;
+}
+
+/* Styles généraux */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    background-color: #0b0b0b;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    margin: 40px 0;
+    color: #f1c40f;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+a {
+    color: rgb(39, 155, 4);
+    text-decoration: none;
+}
+
+footer {
+    background-color: #1a1a1a77;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #0c9aa1;
+    text-decoration: none;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-container div {
+    margin: 10px;
+}
+
+.footer-container h3 {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+}
+
+.footer-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-container li {
+    margin: 5px 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #f1c40f;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #ffffff;
+}
+
+/* autres styles */
+
+.hero {
+    height: 80vh;
+    background-image: url('zenith-background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-top: 80px;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5) url('../img/back.png') no-repeat center center;
+    background-size: cover;
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #6090e4;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.btn {
+    display: inline-block;
+    background-color: #f1c40f;
+    color: #08292b;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #ac89f1;
+}
+
+.upcoming-events {
+    padding: 40px;
+    background-color: #111;
+    background-image: url("../img/fond\ stylée.jpg");
+    text-align: center;
+}
+
+.upcoming-events h2 {
+    font-size: 36px; 
+    margin-bottom: 20px;
+    color: #4be5bf;
+}
+
+.event {
+    display: grid;
+    grid-template-columns: 300px 1fr; /* Première colonne pour l'image et deuxième pour les informations */
+    align-items: center;
+    background-color: #d3a5a571;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.event-image {
+    height: auto;
+}
+
+.event img {
+    width: 100%; /* Réduit la taille de l'image à 100% de la largeur de la colonne */
+    height: auto; /* Maintient le ratio de l'image */
+    object-fit: contain; /* Empêche le rognage et maintient le contenu entier de l'image visible */
+    display: block;
+    padding: 10px; /* Ajouter un peu de padding pour éviter que l'image soit collée au bord */
+}
+
+.event-info {
+    padding: 20px;
+    text-align: left;
+}
+
+.event h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.event p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #bdbdbd;
+}
+
+
+/* Styles pour marquer un événement comme annulé */
+.event.annule {
+    position: relative; /* Nécessaire pour le positionnement absolu du bandeau */
+}
+
+.event.annule::before {
+    content: 'ANNULÉ';
+    position: absolute;
+    top: 50%; /* Centre verticalement */
+    left: 0;
+    right: 0;
+    transform: translateY(-50%); /* Centre le texte verticalement */
+    background-color: rgba(255, 0, 0, 0.7); /* Rouge avec transparence */
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0; /* Ajuste le padding pour un meilleur centrage */
+    z-index: 2; /* Assure que le texte est au-dessus de l'image */
+    text-transform: uppercase; /* Convertit le texte en majuscules */
+}
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 75%; /* Ajuster le ratio selon la taille de l'iframe */
+    margin-bottom: 20px;
+}
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Section des services */
+
+.nos-services-header {
+    padding: 50px 0;
+    background-color: #1223bb1c; /* Fond noir pour le séparateur */
+    text-align: center;
+    color: #ffffff;
+}
+
+.nos-services-header h2 {
+    font-size: 28px;
+    color: #f1c40f; /* Couleur jaune pour "Nos Services" */
+    margin: 0;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+
+.services-section {
+    padding: 50px 0;
+    background-image: url('../img/fond\ stylée.jpg');
+    text-align: center;
+}
+
+.services-section h2 {
+    font-size: 28px;
+    color: #f1c40f; /* Jaune pour le titre */
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+/* Container pour les services */
+.services-container {
+    display: flex;
+    flex-wrap: wrap; /* Permet de passer sur une nouvelle ligne quand l'espace est insuffisant */
+    justify-content: space-between; /* Espacement entre les éléments */
+    gap: 20px; /* Espacement entre les cartes */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Style des cartes individuelles */
+.service-card {
+    flex: 1 1 calc(50% - 20px); /* Chaque carte prend 50% de la largeur moins l'espace du gap */
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    color: white;
+    text-decoration: none; /* Retire le soulignement des liens */
+    min-width: 250px;
+}
+
+.service-card:hover {
+    transform: scale(1.05); /* Animation au survol */
+}
+
+/* Contenu des cartes */
+.service-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Assombrit légèrement le fond de texte */
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.service-content p {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Responsiveness (pour mobiles et tablettes) */
+@media (max-width: 1024px) {
+    .service-card {
+        flex: 1 1 100%; /* Sur les petits écrans, chaque carte prend 100% de la largeur */
+        height: 200px;
+    }
+}
+
+/* Section des sponsors */
+
+.nos-sponsors-header {
+    padding: 50px 0;
+    background-color: #1223bb1c; /* Fond noir pour le séparateur */
+    text-align: center;
+    color: #ffffff;
+}
+
+.nos-sponsors-header h2 {
+    font-size: 28px;
+    color: #f1c40f; /* Couleur jaune pour "Nos Services" */
+    margin: 0;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.sponsors-section {
+    padding: 50px 0;
+    background-image: url('img/mbm.jpeg');
+    text-align: center;
+}
+
+.sponsors-section h2 {
+    font-size: 28px;
+    color: #f1c40f; /* Jaune pour le titre */
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+/* Conteneur pour les sponsors */
+.sponsors-container {
+    display: flex;
+    justify-content: space-between; /* Espace entre les cartes */
+    flex-wrap: wrap; /* Permet de passer à une nouvelle ligne si nécessaire */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Style des cartes de sponsor */
+.sponsor-card {
+    flex: 1 1 calc(20% - 20px); /* Chaque sponsor prend 20% de la ligne, moins le gap */
+    background-color: #1a1a1ac9;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    min-width: 150px; /* Taille minimale pour éviter que les cartes ne soient trop petites */
+}
+
+.sponsor-card img {
+    max-width: 100%;
+    height: auto; /* Conserve les proportions de l'image */
+}
+
+/* Animation au survol */
+.sponsor-card:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive : pour les petits écrans */
+@media (max-width: 1024px) {
+    .sponsor-card {
+        flex: 1 1 calc(33.33% - 20px); /* Chaque sponsor prendra 33% sur tablettes */
+    }
+}
+
+@media (max-width: 768px) {
+    .sponsor-card {
+        flex: 1 1 calc(50% - 20px); /* Chaque sponsor prendra 50% sur petits écrans */
+    }
+}
+
+@media (max-width: 480px) {
+    .sponsor-card {
+        flex: 1 1 100%; /* Chaque sponsor prendra 100% sur les écrans très petits */
+    }
+}
+
+/* Section Héros (pour l'impact visuel) */
+.hero-section {
+    height: 100vh;
+    background-image: url('https://example.com/concert-background.jpg'); /* Remplace cette URL par une vraie image de concert */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 4rem;
+    margin: 0;
+    color: #fff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    color: #fff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+.cta-button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #ff005e;
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(255, 0, 94, 0.5);
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e6004e;
+    box-shadow: 0 7px 20px rgba(255, 0, 94, 0.7);
+    transform: scale(1.05);
+}
+
+/* Responsivité pour les petits écrans */
+@media screen and (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+    }
+}
+
+.navbar {
+    overflow: hidden; /* Pour gérer le contenu débordant */
+    display: flex; /* Utiliser flexbox pour le centrage */
+    align-items: center; /* Aligner verticalement */
+    justify-content: flex-start; /* Aligner à gauche */
+}
+
+/* Styles pour l'icône du menu */
+.menu-icon {
+    color: rgb(0, 17, 255); /* Couleur du texte de l'icône */
+    font-size: 25px; /* Taille de la police */
+    cursor: pointer; /* Changer le curseur au survol */
+    margin-right: 10px; /* Espace à droite de l'icône */
+}
+
+/* Styles pour la barre latérale */
+.sidenav {
+    height: 100%; /* Hauteur complète */
+    width: 0; /* Commence masqué */
+    position: fixed; /* Reste en place quand on défile */
+    z-index: 1000; /* Au-dessus des autres éléments */
+    top: 80px;
+    right: 0;
+    background-color: #7a4d4dce;
+    overflow-x: hidden; /* Pas de défilement horizontal */
+    transition: 0.5s; /* Transition douce */
+    padding-top: 60px; /* Espacement en haut */
+    margin-right : 15px;
+}
+
+/* Styles pour les liens dans le menu */
+.sidenav a {
+    padding: 10px 16px; /* Espacement pour les liens */
+    text-decoration: none; /* Pas de soulignement */
+    font-size: 20px; /* Taille du texte */
+    color: rgb(54, 2, 70); /* Couleur du texte */
+    display: block; /* Les liens occupent toute la largeur */
+}
+
+/* Changer la couleur au survol */
+.sidenav a:hover {
+    color: #ff0000; /* Couleur au survol */
+}
+
+.category {
+    margin: 10px 0;
+    position: relative; /* Permet de positionner la flèche par rapport à la catégorie */
+    color: #006da0;
+}
+
+/* Catégorie lien */
+.category-link {
+    font-size: 18px;
+    color: rgb(11, 139, 161);
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    width: 85%; /* Réduit la largeur pour laisser de la place à la flèche */
+    box-sizing: border-box;
+}
+
+/* Sous-catégories cachées par défaut */
+.submenu {
+    display: none;
+    padding-left: 20px; /* Indentation pour montrer que ce sont des sous-catégories */
+}
+
+.submenu a {
+    padding: 5px 0;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.submenu a:hover {
+    color: #006da0; /* Couleur au survol */
+}
+
+/* Le bouton pour dérouler le menu */
+.category-toggle {
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    right: 10px; /* Place la flèche à droite du lien */
+    top: 10px; /* Aligne verticalement avec le texte de la catégorie */
+}
+
+/* Bouton de fermeture */
+.closebtn {
+    font-size: 60px; /* Augmente la taille de la croix */
+    color: white;
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+}
+
+/* Afficher le menu */
+.sidenav.open {
+    width: 250px; /* Largeur quand ouvert */
+}
+
+/* Styles pour l'icône du menu */
+.menu-icon {
+    color: white; /* Couleur du texte */
+    font-size: 20px; /* Taille de la police */
+    cursor: pointer; /* Changer le curseur au survol */
+    display: flex;
+    margin-right: 10px; /* Espace à droite de l'icône */
+    margin-left: 20px; /* Espace à droite de l'icône */
+}
+

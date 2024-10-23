@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../img/sound-on-logo.png" />
+    <title>Accéder à la Salle</title>
+    <link rel="stylesheet" href="../styles/style_salle.css">
+</head>
+<body>
+    <header class="top-bar">
+        <div class="top-bar">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../img/sound-on-logo.png" alt="SoundOn Logo" id="logo" data-height-percentage="88" />
+                </a>
+            </div>
+            <div class="site-name">
+                <h1>Sound On</h1>
+            </div>
+        </div>
+        <div class="navbar">
+            <span class="menu-icon" onclick="toggleNav()">Menu</span>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">&times;</a>
+            <div class="category">
+                <a href="../index.html" class="category-link">Acceuil</a>
+            </div>
+            <div class="category">
+                <a href="../prog/prog.html" class="category-link">Programmation</a>
+                <span class="category-toggle" onclick="toggleSubmenu('submenu1')">▼</span>
+                <div id="submenu1" class="submenu">
+                    <a href="../prog/prog/cousin_machin.html">-> Cousin Machin</a>
+                    <a href="../prog/prog/indochine.html">-> Indochine</a>
+                </div>
+            </div>
+        
+            <!-- Catégorie 2 -->
+            <div class="category">
+                <a href="acceder_salle.html" class="category-link">Accéder à la salle</a>
+            </div>
+        
+            <!-- Catégorie 3 -->
+            <div class="category">
+                <a href="../acces/accessibilite-psh.html" class="category-link">Accessibilité</a>
+            </div>
+
+            <!-- Catégorie 4 -->
+            <div class="category">
+                <a href="../food/food.html" class="category-link">Food & Bar</a>
+            </div>
+
+            <!-- Catégorie 5 -->
+            <div class="category">
+                <a href="../pdf/reglement.pdf" target="_blank" class="category-link">Réglements</a>
+            </div>
+
+            <!-- Catégorie 6 -->
+            <div class="category">
+                <a href="../contact/contact.html" class="category-link">Contacts</a>
+            </div>
+        </div>      
+    </header>   
+
+    <main class="container">
+        <!-- Section de la carte Google -->
+        <section class="map-section">
+            <h2>Localisation de la Salle</h2>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.1622796871093!2d2.805368776359101!3d50.43807788825471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47dd308a7c58a0ef%3A0xf3d8ea1d73a955e!2sIUT%20de%20Lens%20-%20Universite%20d&#39;Artois!5e0!3m2!1sfr!2sfr!4v1728833145772!5m2!1sfr!2sfr"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </section>
+        <section class="parking-section">
+            <h2>Parking de la Salle</h2>
+            <div class="parking-line-contenair">
+                <!-- En voiture -->
+                <div class="parking">
+                    <img src="../img/parking/parking salle.jpg" alt="Parking de la salle" class="parking-image"> 
+                    <div class="parking-info">
+                        <div class="public-parking">
+                            <h3>Parking Public (Réservé au Public du Concert)</h3>
+                            <p>Le parking principal, situé à l'entrée de la salle de concert, sera entièrement réservé au public pendant l'événement. Ce parking de surface est suffisamment grand pour accueillir les spectateurs.</p>
+                            <p><strong>Accès :</strong> Le parking public sera bien signalé à l'arrivée. Il est directement accessible sans autorisation spécifique pour le public. Des agents seront présents pour guider les voitures vers les places disponibles.</p>
+                            <p><strong>Proximité :</strong> Le parking est situé à quelques mètres de l'entrée principale de la salle de concert, garantissant un accès facile.</p>
+                            <p><strong>Accessibilité :</strong> Des places de stationnement sont réservées pour les personnes à mobilité réduite, situées près de l'entrée principale.</p>
+                        </div>
+                        <div class="staff-parking">
+                            <h3>Parking du Personnel (Réservé aux Artistes et à l'Équipe)</h3>
+                            <p>Un parking secondaire, situé à proximité des coulisses et des accès techniques de la salle, est exclusivement réservé aux artistes et au personnel technique.</p>
+                            <p><strong>Accès :</strong> Le parking est sécurisé et nécessite une autorisation spéciale ou un badge pour accéder. Les membres de l’équipe technique et les artistes doivent présenter leur identification à l’entrée.</p>
+                            <p><strong>Proximité des coulisses :</strong> Ce parking est à proximité directe des accès aux coulisses pour faciliter le déplacement du matériel et des équipes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section des lignes de bus -->
+        <section class="bus-section">
+            <h2>Accès en Bus</h2>
+            <div class="bus-details">
+                <!-- Ligne de bus 1 -->
+                <div class="bus-line-container">
+                    <a href="https://s3.cloud.actigraph.com/tadao/upload/Fiches-horaires/HIVER/Ligne13.pdf?AWSAccessKeyId=tadao&Expires=1729115999&Signature=qdjX%2FvoU4s%2FE3mDQvM70s2Omirs%3D" target="_blank">
+                        <img src="../img/bus/13.png" alt="Ligne de Bus 13" class="bus-line-image">
+                    </a>
+                    <p>Ligne de Bus 13 : Arrêt => IUT</p>
+                </div>
+                <!-- Ligne de bus 2 -->
+                <div class="bus-line-container">
+                    <a href="https://s3.cloud.actigraph.com/tadao/upload/Fiches-horaires/HIVER/Ligne18.pdf?AWSAccessKeyId=tadao&Expires=1729115999&Signature=qZoLPnrsojFVsn15YRIVc5mzxU8%3D" target="_blank">
+                        <img src="../img/bus/18.png" alt="Ligne de Bus 18" class="bus-line-image">
+                    </a>
+                    <p>Ligne de Bus 18 : Arrêt => IUT NORD</p>
+                </div>
+                <!-- Ligne de bus 3 -->
+                <div class="bus-line-container">
+                    <a href="https://s3.cloud.actigraph.com/tadao/upload/Fiches-horaires/HIVER/Ligne18exp.pdf?AWSAccessKeyId=tadao&Expires=1729115999&Signature=g9%2BpfzmmWp5Y%2Bk2ZMTyqwM8l0QQ%3D" target="_blank">
+                        <img src="../img/bus/18EXP.png" alt="Ligne de Bus 18 Express" class="bus-line-image">
+                    </a>
+                    <p>Ligne de Bus 18 Express : Arrêt => IUT NORD</p>
+                </div>
+                <!-- Ligne de bus 4 -->
+                <div class="bus-line-container">
+                    <a href="https://s3.cloud.actigraph.com/tadao/upload/Fiches-horaires/HIVER/Ligne22.pdf?AWSAccessKeyId=tadao&Expires=1729115999&Signature=BatEambynS9UOgqGirw95Ppt35U%3D" target="_blank">
+                        <img src="../img/bus/22.png" alt="Ligne de Bus 22" class="bus-line-image">
+                    </a>
+                    <p>Ligne de Bus 22 : Arrêt => IUT NORD</p>
+                </div>
+                <!-- Ligne de bus 5 -->
+                <div class="bus-line-container">
+                    <a href="https://s3.cloud.actigraph.com/tadao/upload/Fiches-horaires/HIVER/Ligne41.pdf?AWSAccessKeyId=tadao&Expires=1729115999&Signature=XeWEUHTmTbvirfHvzDCjk1XOM58%3D" target="_blank">
+                        <img src="../img/bus/41.png" alt="Ligne de Bus 41" class="bus-line-image">
+                    </a>
+                    <p>Ligne de Bus 41 : Arrêt => IUT</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section des autres moyens de transport -->
+        <section class="other-transport-section">
+            <h2>Autres Moyens de Transport</h2>
+            <div class="other-transport-details">
+                <!-- En voiture -->
+                <div class="other-transport">
+                    <h3>En Voiture</h3>
+                    <p>Parking gratuit disponible à côté de la salle.</p>
+                    <p>Adresse : 123 Rue de la Musique, 75000 Paris</p>
+                </div>
+
+                <!-- En vélo -->
+                <div class="other-transport">
+                    <h3>En Vélo</h3>
+                    <p>Stations de vélos en libre-service disponibles à proximité de la salle.</p>
+                </div>
+
+                <!-- En Taxi -->
+                <div class="other-transport">
+                    <h3>En Taxi</h3>
+                    <p>Les taxis peuvent vous déposer directement devant l'entrée principale de la salle.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="social-media">
+                <h3>Suivez-nous</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.tik-tok.com" target="_blank">Tik Tok</a></li>
+                </ul>
+            </div>
+            
+            <div class="contact-info">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="mailto:contact@SoundOn.fr">contact@example.com</a></li>
+                    <li>Téléphone: +33 1 23 45 67 89</li>
+                    <li>Adresse: 123 Rue Exemple, 75000 Paris</li>
+                </ul>
+            </div>
+            
+            <div class="rules">
+                <h3>Liens Utiles</h3>
+                <ul>
+                    <li><a href="pdf/reglement.pdf" target="_blank">Reglement de la Salle</a></li>
+                    <li><a href="contact/contact.html">Nous Contacter</a></li>
+                    <li><a href="#politique">FAQ</a></li>
+                    <li><a href="#politique">Mentions Légales</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Sound On. Tous droits réservés.</p>
+            <p>&copy; Lucas Ternel, Manon Drumez, Nathan Roelofs, Ethan Morel</p>
+        </div>
+    </footer>
+    <script src="../code.js"></script>
+</body>
+</html>
