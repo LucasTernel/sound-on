@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../img/sound-on-logo.png" />
+    <title>Accéder à la Salle</title>
+    <link rel="stylesheet" href="../styles/styles-psh.css">
+</head>
+<body>
+    <header class="top-bar">
+        <div class="top-bar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="../img/sound-on-logo.png" alt="SoundOn Logo" id="logo" data-height-percentage="88" />
+                </a>
+            </div>
+            <div class="site-name">
+                <h1>Sound On</h1>
+            </div>
+        </div>
+        <div class="navbar">
+            <span class="menu-icon" onclick="toggleNav()">Menu</span>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">&times;</a>
+            <div class="category">
+                <a href="../index.html" class="category-link">Acceuil</a>
+            </div>
+            <div class="category">
+                <a href="../prog/prog.html" class="category-link">Programmation</a>
+                <span class="category-toggle" onclick="toggleSubmenu('submenu1')">▼</span>
+                <div id="submenu1" class="submenu">
+                    <a href="../prog/prog/cousin_machin.html">-> Cousin Machin</a>
+                    <a href="../prog/prog/indochine.html">-> Indochine</a>
+                </div>
+            </div>
+        
+            <!-- Catégorie 2 -->
+            <div class="category">
+                <a href="../salle/acceder_salle.html" class="category-link">Accéder à la salle</a>
+            </div>
+        
+            <!-- Catégorie 3 -->
+            <div class="category">
+                <a href="accessibilite-psh.html" class="category-link">Accessibilité</a>
+            </div>
+
+            <!-- Catégorie 4 -->
+            <div class="category">
+                <a href="../food/food.html" class="category-link">Food & Bar</a>
+            </div>
+
+            <!-- Catégorie 5 -->
+            <div class="category">
+                <a href="../pdf/reglement.pdf" target="_blank" class="category-link">Réglements</a>
+            </div>
+
+            <!-- Catégorie 6 -->
+            <div class="category">
+                <a href="../contact/contact.html" class="category-link">Contacts</a>
+            </div>
+        </div>      
+    </header>
+
+    <main class="container">
+        <!-- Section des informations d'accessibilité -->
+        <section class="accessibility-section">
+            <h2>Accessibilité PSH</h2>
+            <p>De nombreux travaux ont été réalisés afin de permettre l’accueil des personnes en situation de handicap dans les meilleures conditions possibles.</p>
+            <ul>
+                <li>Création de plateformes en gradins pour les personnes en fauteuil roulant avec un accès dédié (élévateur).</li>
+                <li>Mise en place d’une boucle magnétique (sur demande préalable).</li>
+                <li>Disponibilité de gilets vibrants d'immersion (sur demande préalable).</li>
+                <li>Bandes de guidage au sol pour les personnes malvoyantes.</li>
+                <li>Aménagement des sanitaires et des comptoirs de bars pour l'accessibilité.</li>
+                <li>Création de places de parking dédiées et d’un lieu de dépose de proximité.</li>
+            </ul>
+        </section>
+
+        <!-- Section des informations sur l'accès à la salle et le stationnement -->
+        <section class="parking-section">
+            <h2>Accéder à la Salle et Stationner</h2>
+            <p>Deux possibilités pour accéder à Sound On :</p>
+            <h3>Accès piéton :</h3>
+            <p>Arrivé devant Sound On, utilisez la file de gauche indiquée "PSH / INVITATIONS / FEMME ENCEINTE". Notre personnel sur place vous guidera, et vous pouvez demander une prise en charge si nécessaire.</p>
+            
+            <h3>Accès par véhicule :</h3>
+            <p>Une dépose est possible devant Sound On. Si vous êtes titulaire d’une carte de stationnement pour personnes handicapées, vous pourrez accéder à un parking dédié, sous réserve de disponibilité des places.</p>
+        </section>
+
+        <!-- Section des équipements et installations -->
+        <section class="equipment-section">
+            <h2>Équipements et Installations</h2>
+            <ul>
+                <li>Places réservées aux personnes en fauteuil roulant : 40 places disponibles.</li>
+                <li>Places réservées aux personnes présentant des difficultés à se déplacer et à leurs accompagnants (dans la limite des places disponibles).</li>
+                <li>Sanitaires et comptoirs de bar accessibles.</li>
+            </ul>
+            <p>Le plan de salle varie selon les événements, donc l’emplacement précis des PSH ne peut être garanti à l'avance.</p>
+        </section>
+
+        <!-- Section des recommandations de transport -->
+        <section class="transport-section">
+            <h2>Recommandations de Transport</h2>
+            <p>Nous vous recommandons d'utiliser les transports en commun pour accéder à Sound On, situé en plein cœur de l'IUT. Les possibilités de stationnement étant limitées aux alentours de la salle, les transports en commun sont une alternative pratique.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="social-media">
+                <h3>Suivez-nous</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.tik-tok.com" target="_blank">Tik Tok</a></li>
+                </ul>
+            </div>
+            
+            <div class="contact-info">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="mailto:contact@SoundOn.fr">contact@SoundON.fr</a></li>
+                    <li>Téléphone:  03 68 09 80 80</li>
+                    <li>Adresse: 16 Rue de l'Université, 62307 Lens</li>
+                </ul>
+            </div>
+            
+            <div class="rules">
+                <h3>Liens Utiles</h3>
+                <ul>
+                    <li><a href="pdf/reglement.pdf" target="_blank">Reglement de la Salle</a></li>
+                    <li><a href="contact/contact.html">Nous Contacter</a></li>
+                    <li><a href="#politique">FAQ</a></li>
+                    <li><a href="#politique">Mentions Légales</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Sound On. Tous droits réservés.</p>
+            <p>&copy; Lucas Ternel, Manon Drumez, Nathan Roelofs, Ethan Morel</p>
+        </div>
+    </footer>
+    <script src="../code.js"></script>
+</body>
+</html>
