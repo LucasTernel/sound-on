@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../img/sound-on-logo.png" />
+    <title>Repas et Boissons - Salle de Concert</title>
+    <link rel="stylesheet" href="../styles/style_food.css">
+</head>
+<body>
+    <header class="top-bar">
+        <div class="top-bar">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../img/sound-on-logo.png" alt="SoundOn Logo" id="logo" data-height-percentage="88" />
+                </a>
+            </div>
+            <div class="site-name">
+                <h1>Sound On</h1>
+            </div>
+        </div>
+        <div class="navbar">
+            <span class="menu-icon" onclick="toggleNav()">Menu</span>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">&times;</a>
+            <div class="category">
+                <a href="../index.html" class="category-link">Acceuil</a>
+            </div>
+            <div class="category">
+                <a href="../prog/prog.html" class="category-link">Programmation</a>
+                <span class="category-toggle" onclick="toggleSubmenu('submenu1')">▼</span>
+                <div id="submenu1" class="submenu">
+                    <a href="../prog/prog/cousin_machin.html">-> Cousin Machin</a>
+                    <a href="../prog/prog/indochine.html">-> Indochine</a>
+                </div>
+            </div>
+        
+            <!-- Catégorie 2 -->
+            <div class="category">
+                <a href="../salle/acceder_salle.html" class="category-link">Accéder à la salle</a>
+            </div>
+        
+            <!-- Catégorie 3 -->
+            <div class="category">
+                <a href="../acces/accessibilite-psh.html" class="category-link">Accessibilité</a>
+            </div>
+
+            <!-- Catégorie 4 -->
+            <div class="category">
+                <a href="food.html" class="category-link">Food & Bar</a>
+            </div>
+
+            <!-- Catégorie 5 -->
+            <div class="category">
+                <a href="../pdf/reglement.pdf" target="_blank" class="category-link">Réglements</a>
+            </div>
+
+            <!-- Catégorie 6 -->
+            <div class="category">
+                <a href="../contact/contact.html" class="category-link">Contacts</a>
+            </div>
+        </div>      
+    </header>    
+<main>
+    <section class="menu">
+        <section class="bandeau-noir">
+            <h2>Repas</h2>
+        </section>
+        <ul class="food-list">
+            <li>
+                <img src="../img/food/burger.jpg" alt="Burger Classique">
+                <div class="item-details">
+                    <h3> SoundOn Burger </h3>
+                    <p>Un délicieux burger local, au boeuf, avec du fromage et beaucoup de frites de la part de Jonathan.</p>
+                    <span class="price">8.50€</span>
+                </div>
+            </li>
+            <li>
+                <img src="../img/food/americain.jpg" alt="Pizza Margherita">
+                <div class="item-details">
+                    <h3>Américains</h3>
+                    <p>Différentes choix possibles : Américain Saucisse, Merguez, Fricadelle, Mexicanos, Saucisse Végétale, Saucisse Halal.</p>
+                    <p>L'Américain, c'est une tradition avec des frites croustillantes et des sauces audacieuses, pour une explosion de saveurs à chaque bouchée !</p>
+                    <span class="price">6.50€</span>
+                </div>
+            </li>
+            <li>
+                <img src="../img/food/sandwich.jpeg" alt="Sandwich Végétarien">
+                <div class="item-details">
+                    <h3>Sandwichs</h3>
+                    <p>Différentes choix possibles à voir sur place avec tout les goûts et pour tout le monde</p>
+                    <span class="price">4.00€</span>
+                </div>
+            </li>
+        </ul><br>
+        <section class="bandeau-noir">
+            <h2>Boissons</h2>
+        </section>
+        <ul class="drink-list">
+            <li>
+                <img src="../img/drink/softs.jpeg" alt="Softs">
+                <div class="item-details">
+                    <h3>Softs ( 33cl ) </h3>
+                    <p>Coca-Cola, Fanta, Orangina, Sprite, Ice-Tea</p>
+                    <p>Servi dans une Eco-Cup personalisé, les softs auront une saveur rock n'roll.</p>
+                    <span class="price">3€</span>
+                </div>
+            </li>
+            <li>
+                <img src="../img/drink/bierre.jpeg" alt="Bières">
+                <div class="item-details">
+                    <h3>Bières</h3>
+                    <p> Goudale, Goudale Rouge, Heineken, Kronenbourg, Carlsberg, Stella Artois </p>
+                    <p>Bière artisanale, locale, légère et désaltérante.</p>
+                    <w>TOUTE CONSOMMATION D'ACCOOL COMPORTE DES RISQUES D'ADDICTION ET EST RESERVÉ AU MOINS DE 18 ANS</w>
+                    <span class="price">5€</span>
+                </div>
+            </li>
+            <li>
+                <img src="../img/drink/eau.jpeg" alt="Eau">
+                <div class="item-details">
+                    <h3>Eau</h3>
+                    <p>Qu'elle soit Plate ou Petillante, l'eau c'est la vie.</p>
+                    <p>Comme dis Jean Claude Van Damme, " J'adore l'eau, dans 20-30 ans y'en aura plus"</p>
+                    <span class="price">0.50€</span>
+                </div>
+            </li>
+        </ul>
+    </section>
+</main>
+<footer>
+    <div class="footer-container">
+        <div class="social-media">
+            <h3>Suivez-nous</h3>
+            <ul>
+                <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                <li><a href="https://www.tik-tok.com" target="_blank">Tik Tok</a></li>
+            </ul>
+        </div>
+        
+        <div class="contact-info">
+            <h3>Contact</h3>
+            <ul>
+                <li><a href="mailto:contact@SoundOn.fr">contact@SoundON.fr</a></li>
+                <li>Téléphone: 03 68 09 80 80</li>
+                <li>Adresse: 16 Rue de l'Université, 62307 Lens</li>
+            </ul>
+        </div>
+        
+        <div class="rules">
+            <h3>Liens Utiles</h3>   
+            <ul>
+                <li><a href="pdf/reglement.pdf" target="_blank">Reglement de la Salle</a></li>
+                <li><a href="contact/contact.html">Nous Contacter</a></li>
+                <li><a href="#politique">FAQ</a></li>
+                <li><a href="#politique">Mentions Légales</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Sound On. Tous droits réservés.</p>
+        <p>&copy; Lucas Ternel, Manon Drumez, Nathan Roelofs, Ethan Morel</p>
+    </div>
+</footer>
+    <script src="../code.js"></script>
+</body>
+</html>
