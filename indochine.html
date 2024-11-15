@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../../img/sound-on-logo.png" />
+    <title>Indochine</title>
+    <link rel="stylesheet" href="../../styles/style_prog.css">
+
+</head>
+<body>
+    <header class="top-bar">
+        <div class="top-bar">
+            <div class="logo">
+                <a href="../../index.html">
+                    <img src="../../img/sound-on-logo.png" alt="SoundOn Logo" id="logo" data-height-percentage="88" />
+                </a>
+            </div>
+            <div class="site-name">
+                <h1>Sound On</h1>
+            </div>
+        </div>
+        <div class="navbar">
+            <span class="menu-icon" onclick="toggleNav()">Menu</span>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">&times;</a>
+            <div class="category">
+                <a href="../../index.html" class="category-link">Acceuil</a>
+            </div>
+            <div class="category">
+                <a href="../prog.html" class="category-link">Programmation</a>
+                <span class="category-toggle" onclick="toggleSubmenu('submenu1')">▼</span>
+                <div id="submenu1" class="submenu">
+                    <a href="cousin_machin.html">-> Cousin Machin</a>
+                    <a href="indochine.html">-> Indochine</a>
+                </div>
+            </div>
+        
+            <!-- Catégorie 2 -->
+            <div class="category">
+                <a href="../../salle/acceder_salle.html" class="category-link">Accéder à la salle</a>
+            </div>
+        
+            <!-- Catégorie 3 -->
+            <div class="category">
+                <a href="../../acces/accessibilite-psh.html" class="category-link">Accessibilité</a>
+            </div>
+
+            <!-- Catégorie 4 -->
+            <div class="category">
+                <a href="../../food/food.html" class="category-link">Food & Bar</a>
+            </div>
+
+            <!-- Catégorie 5 -->
+            <div class="category">
+                <a href="../../pdf/reglement.pdf" target="_blank" class="category-link">Réglements</a>
+            </div>
+
+            <!-- Catégorie 6 -->
+            <div class="category">
+                <a href="../../contact/contact.html" class="category-link">Contacts</a>
+            </div>
+        </div>      
+    </header>       
+    <main>
+    
+        <div class="container">
+            <h1>BILLETTERIE OFFICIELLE - Indochine</h1>
+            <div class="billetterie-section">
+                <!-- Image de l'événement -->
+                <div class="billetterie-image">
+                    <img src="../../img/indochine.png" alt="INDOCHINE">
+                </div>
+    
+                <!-- Intégration iframe Billetweb -->
+                <div class="iframe-container">
+                    <iframe 
+                        src="https://www.billetweb.fr/shop.php?event=indochine1" frameborder="0" allowfullscreen = "true">
+                    </iframe>
+                </div>
+            </div>
+    
+        </div>
+        <section class="event-details-section">
+            <div class="event-detail">
+                <div class="icon-container">
+                    <img src="../../img/map.svg" alt="Location Icon" class="icon">
+                </div>
+                <div class="detail-text">
+                    <h3>Lieu de l'événement</h3>
+                    <p>Amphithéatre MMI<br>
+                    16 Rue de l'Université<br>
+                    62307 - Lens | France
+                    </p>
+                </div>
+            </div>
+
+            <div class="event-detail">
+                <div class="icon-container">
+                    <img src="../../img/horloge.svg" alt="Time Icon" class="icon">
+                </div>
+                <div class="detail-text">
+                    <h3>Horaires</h3>
+                    <p>Indochine<br>
+                    Combos : 17h00 <br>
+                    Ouverture : 18h00<br>
+                    Show : 19h00
+                    </p>
+                </div>
+            </div>
+
+            <div class="event-detail">
+                <div class="icon-container">
+                    <img src="../../img/question.svg" alt="Help Icon" class="icon">
+                </div>
+                <div class="detail-text">
+                    <h3>Un problème pour obtenir vos tickets ?</h3>
+                    <p>Contactez-nous par mail à l'adresse suivante : contact@SoundON.fr<br>
+                    ou par téléphone au : 03 68 09 80 80
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pied de page -->
+        <footer>
+            <div class="footer-container">
+                <div class="social-media">
+                    <h3>Suivez-nous</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                        <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                        <li><a href="https://www.tik-tok.com" target="_blank">Tik Tok</a></li>
+                    </ul>
+                </div>
+                
+                <div class="contact-info">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="mailto:contact@SoundOn.fr">contact@SoundON.fr</a></li>
+                        <li>Téléphone:  03 68 09 80 80</li>
+                        <li>Adresse: 16 Rue de l'Université, 62307 Lens</li>
+                    </ul>
+                </div>
+                
+                <div class="rules">
+                    <h3>Liens Utiles</h3>
+                    <ul>
+                        <li><a href="pdf/reglement.pdf" target="_blank">Reglement de la Salle</a></li>
+                        <li><a href="contact/contact.html">Nous Contacter</a></li>
+                        <li><a href="#politique">FAQ</a></li>
+                        <li><a href="#politique">Mentions Légales</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sound On. Tous droits réservés.</p>
+                <p>&copy; Lucas Ternel, Manon Drumez, Nathan Roelofs, Ethan Morel</p>
+            </div>
+        </footer>
+    <script src="../../code.js"></script>
+</body>
+</html>
+
